@@ -1,0 +1,119 @@
+/* Estilos principais para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  visibility: hidden; /* As mensagens de erro começam invisíveis */
+}
+
+.error-message.visible {
+  visibility: visible; /* Torna as mensagens visíveis em caso de erro */
+}
+
+
+/* Estilos para o título da página */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para os labels (rótulos dos campos) */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Estilo para os inputs, selects e buttons */
+input, select, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Estilo específico para o botão */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Estilo para a área de resultado */
+.resultado {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o gráfico */
+canvas {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+}
+
+/* Estilo para os inputs com foco */
+input:focus, select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Estilo para a área de formulário para melhor visualização */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilo para os botões do formulário */
+button, #limparBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, #limparBtn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  input, select, button {
+    font-size: 14px;
+  }
+
+  .resultado {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

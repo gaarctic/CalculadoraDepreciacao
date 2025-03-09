@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Depreciação Fiscal</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Depreciação Fiscal</h1>
+
+    <label for="bem">Selecione um bem:</label>
+    <select id="bem">
+        <option value="">Selecione um bem</option>
+    </select>
+
+    <p id="bemError" style="color: red; display: none;"></p>
+
+    <div>
+        <label for="precoCompra">Preço de Compra:</label>
+        <input type="number" id="precoCompra" required>
+
+        <label for="vidaUtil">Vida Útil (em anos):</label>
+        <input type="number" id="vidaUtil" required>
+
+        <label for="mesesUtilizados">Meses Utilizados:</label>
+        <input type="number" id="mesesUtilizados" required>
+
+        <label for="precoVenda">Preço de Venda:</label>
+        <input type="number" id="precoVenda" required>
+
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limparDados()">Limpar</button>
+    </div>
+
+    <div>
+        <p><strong>Depreciação:</strong> <span id="depreciacao"></span></p>
+        <p><strong>Valor Contábil:</strong> <span id="valorContabil"></span></p>
+        <p><strong>Ganho ou Perda de Capital:</strong> <span id="ganhoOuPerda"></span></p>
+        <p><strong>Resultado Final:</strong> <span id="resultadoFinal"></span></p>
+    </div>
+
+    <canvas id="grafico" width="400" height="200"></canvas>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

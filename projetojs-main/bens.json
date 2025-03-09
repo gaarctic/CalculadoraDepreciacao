@@ -1,0 +1,27 @@
+[
+    {
+        "nome": "Máquina Industrial",
+        "precoCompra": 50000,
+        "vidaUtil": 10
+    },
+    {
+        "nome": "Veículo de Transporte",
+        "precoCompra": 20000,
+        "vidaUtil": 8
+    },
+    {
+        "nome": "Móveis e Utensílios",
+        "precoCompra": 3000,
+        "vidaUtil": 5
+    },
+    {
+        "nome": "Computadores e Equipamentos",
+        "precoCompra": 4000,
+        "vidaUtil": 3
+    },
+    {
+        "nome": "Imóvel Comercial",
+        "precoCompra": 150000,
+        "vidaUtil": 30
+    }
+]
